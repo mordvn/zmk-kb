@@ -1,0 +1,131 @@
+layout: {zmk_keyboard: corne}
+layers:
+  Default Layer:
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - BSPC
+  - LCTRL
+  - {t: LCTRL, h: A}
+  - {t: LEFT ALT, h: R}
+  - {t: LEFT GUI, h: S}
+  - {t: LEFT SHIFT, h: T}
+  - G
+  - M
+  - {t: RIGHT SHIFT, h: N}
+  - {t: RIGHT GUI, h: E}
+  - {t: RIGHT ALT, h: I}
+  - {t: RCTRL, h: O}
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - Raise Layer
+  - SPACE
+  - RET
+  - Lower Layer
+  - RALT
+  Lower Layer:
+  - TAB
+  - /
+  - '9'
+  - '8'
+  - '7'
+  - '*'
+  - BRI DEC
+  - BRIGHTNESS INC
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - BSPC
+  - LCTRL
+  - '-'
+  - '3'
+  - '2'
+  - '1'
+  - +
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - '&change_lang'
+  - BT NXT
+  - LSHFT
+  - X
+  - '6'
+  - '5'
+  - '4'
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - BT PRV
+  - LGUI
+  - '0'
+  - SPACE
+  - RET
+  - {type: held}
+  - RALT
+  Raise Layer:
+  - TAB
+  - '`'
+  - <
+  - '>'
+  - '-'
+  - '|'
+  - ^
+  - '{'
+  - '}'
+  - $
+  - '&syntax_pattern'
+  - BSPC
+  - LCTRL
+  - '!'
+  - '*'
+  - /
+  - '='
+  - '&'
+  - '#'
+  - (
+  - )
+  - ;
+  - '"'
+  - {t: ▽, type: trans}
+  - LSHFT
+  - '~'
+  - +
+  - '['
+  - ']'
+  - '%'
+  - '@'
+  - ':'
+  - ','
+  - .
+  - ''''
+  - '&ext_md_code'
+  - LGUI
+  - {type: held}
+  - SPACE
+  - RET
+  - {t: ▽, type: trans}
+  - RALT
