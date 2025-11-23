@@ -12,20 +12,41 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install keymap-drawer
         run: python -m pip install --upgrade pip keymap-drawer
 
-      - name: Generate keymap
+      - name: Download ZMK sources
+        run: |
+          git clone https://github.com/zmkfirmware/zmk.git --depth=1 zmk
+
+      - name: Generate YAML from ZMK DTS
+        run: |
+          python -m keymap_drawer zmk \
+            --keymap config/corne.keymap \
+            --dts zmk/app/boards/shields/corne/corne.dtsi \
+            --out keymap.yaml
+
+      - name: Draw SVG
         run: |
           mkdir -p keymaps
           python -m keymap_drawer draw \
             -o keymaps/keymap.svg \
-            config/corne.keymap
+            keymap.yaml
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: keymap-svg
-          path: keymaps/keymap.svg
+      - name: Insert SVG into README
+        run: |
+          if grep -q "<!-- KEYMAP-START -->" README.md; then
+            sed -i '/<!-- KEYMAP-START -->/,/<!-- KEYMAP-END -->/c\<!-- KEYMAP-START -->\n![](keymaps/keymap.svg)\n<!-- KEYMAP-END -->' README.md
+          else
+            echo -e "\n## Keymap\n<!-- KEYMAP-START -->\n![](keymaps/keymap.svg)\n<!-- KEYMAP-END -->" >> README.md
+          fi
+
+      - name: Commit changes
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "keymap-editor-bot"
+          git add README.md keymaps/keymap.svg keymap.yaml || true
+          git commit -m "update keymap diagram" || true
+          git push || true
