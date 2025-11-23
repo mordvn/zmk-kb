@@ -1,12 +1,12 @@
 name: Draw Keymap
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
     paths:
       - "config/**"
       - "boards/shields/**"
-  workflow_dispatch:
 
 jobs:
   draw:
@@ -21,7 +21,6 @@ jobs:
         run: |
           mkdir -p keymaps
           keymap-drawer draw \
-            --config keymap_drawer.config.yaml \
             -o keymaps/keymap.svg \
             config/keymap.keymap
 
