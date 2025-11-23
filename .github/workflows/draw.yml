@@ -15,7 +15,9 @@ jobs:
           python-version: "3.11"
 
       - name: Install keymap-drawer
-        run: python -m pip install --upgrade pip keymap-drawer
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install git+https://github.com/caksoylar/keymap-drawer.git
 
       - name: Download ZMK sources
         run: |
