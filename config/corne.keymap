@@ -8,15 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <170>;
-    quick-tap-ms = <120>;
-    flavor = "balanced";
-    hold-while-undecided;
-    hold-while-undecided-linger;
-    retro-tap;
-};
-
 / {
     macros {
         syntax_pattern: syntax_pattern {
