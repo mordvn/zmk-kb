@@ -14,16 +14,16 @@ layers:
   - ;
   - BSPC
   - LCTRL
-  - {t: LCTRL, h: A}
-  - {t: LEFT ALT, h: R}
-  - {t: LEFT GUI, h: S}
-  - {t: LEFT SHIFT, h: T}
+  - {t: A, h: LCTRL}
+  - {t: R, h: LALT}
+  - {t: S, h: LEFT GUI}
+  - {t: T, h: LEFT SHIFT}
   - G
   - M
-  - {t: RIGHT SHIFT, h: N}
-  - {t: RIGHT GUI, h: E}
-  - {t: RIGHT ALT, h: I}
-  - {t: RCTRL, h: O}
+  - {t: N, h: RIGHT SHIFT}
+  - {t: E, h: RIGHT GUI}
+  - {t: I, h: RIGHT ALT}
+  - {t: O, h: RCTRL}
   - ''''
   - LSHFT
   - Z
@@ -42,7 +42,7 @@ layers:
   - SPACE
   - RET
   - Lower Layer
-  - RALT
+  - LEFT ALT
   Lower Layer:
   - TAB
   - /
@@ -67,7 +67,7 @@ layers:
   - UP
   - RIGHT
   - '&change_lang'
-  - BT NXT
+  - BT CLR
   - LSHFT
   - X
   - '6'
@@ -78,8 +78,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
   - BT PRV
+  - BT NXT
   - LGUI
   - '0'
   - SPACE
