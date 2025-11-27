@@ -35,7 +35,7 @@
         compatible = "zmk,keymap";
 
         default {
-            display-name = "Default Layer";
+            display-name = "default";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -51,7 +51,7 @@
             >;
         };
 
-        lower_layer {
+        number {
             display-name = "number";
 
             // -----------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@
         };
 
         symbol {
-            display-name = "Raise Layer";
+            display-name = "symbol";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -85,7 +85,7 @@
             >;
         };
 
-        vimext {
+        arr2vi {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
