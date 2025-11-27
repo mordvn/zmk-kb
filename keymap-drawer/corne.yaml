@@ -12,8 +12,8 @@ layers:
   - U
   - Y
   - ;
-  - BACKSPACE
-  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: A, h: LCTRL}
   - {t: R, h: LALT}
   - {t: S, h: LEFT GUI}
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RCTRL}
   - ''''
-  - LSHFT
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - ESCAPE
+  - {t: ▽, type: trans}
   - ESCAPE
   - symbol
   - SPACE
@@ -44,7 +44,7 @@ layers:
   - number
   - BACKSPACE
   number:
-  - TAB
+  - {t: ▽, type: trans}
   - /
   - '9'
   - '8'
@@ -56,7 +56,7 @@ layers:
   - VOLUME DOWN
   - VOLUME UP
   - {t: ▽, type: trans}
-  - LCTRL
+  - {t: ▽, type: trans}
   - '-'
   - '3'
   - '2'
@@ -68,7 +68,7 @@ layers:
   - RIGHT
   - arr2vi
   - BT CLR
-  - LSHFT
+  - {t: ▽, type: trans}
   - X
   - '6'
   - '5'
@@ -87,7 +87,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   symbol:
-  - TAB
+  - {t: ▽, type: trans}
   - '`'
   - <
   - '>'
@@ -97,9 +97,9 @@ layers:
   - '{'
   - '}'
   - $
-  - '&syntax_pattern'
+  - _
   - {t: ▽, type: trans}
-  - LCTRL
+  - {t: ▽, type: trans}
   - '!'
   - '*'
   - /
@@ -111,7 +111,7 @@ layers:
   - ;
   - '"'
   - {t: ▽, type: trans}
-  - LSHFT
+  - {t: ▽, type: trans}
   - '~'
   - +
   - '['
