@@ -110,7 +110,7 @@ layers:
   - )
   - ;
   - '"'
-  - {t: ▽, type: trans}
+  - '&go_let'
   - {t: ▽, type: trans}
   - '~'
   - +
