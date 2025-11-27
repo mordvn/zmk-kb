@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - ;
-  - BSPC
+  - {t: ▽, type: trans}
   - LCTRL
   - {t: A, h: LCTRL}
   - {t: R, h: LALT}
@@ -36,14 +36,14 @@ layers:
   - ','
   - .
   - /
-  - ESC
-  - LGUI
+  - {t: ▽, type: trans}
+  - ESCAPE
   - Raise Layer
   - SPACE
   - RET
-  - Lower Layer
-  - LEFT ALT
-  Lower Layer:
+  - number
+  - BACKSPACE
+  number:
   - TAB
   - /
   - '9'
@@ -55,7 +55,7 @@ layers:
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
-  - BSPC
+  - {t: ▽, type: trans}
   - LCTRL
   - '-'
   - '3'
@@ -66,7 +66,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - '&change_lang'
+  - vimext
   - BT CLR
   - LSHFT
   - X
@@ -74,18 +74,18 @@ layers:
   - '5'
   - '4'
   - '%'
-  - {t: ▽, type: trans}
+  - '&change_lang'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT PRV
   - BT NXT
-  - LGUI
+  - {t: ▽, type: trans}
   - '0'
   - SPACE
   - RET
   - {type: held}
-  - RALT
+  - {t: ▽, type: trans}
   Raise Layer:
   - TAB
   - '`'
@@ -122,10 +122,53 @@ layers:
   - ','
   - .
   - ''''
-  - '&ext_md_code'
-  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - SPACE
   - RET
   - {t: ▽, type: trans}
-  - RALT
+  - {t: ▽, type: trans}
+  vimext:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - H
+  - J
+  - K
+  - L
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
