@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - ;
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - LCTRL
   - {t: A, h: LCTRL}
   - {t: R, h: LALT}
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
+  - ESCAPE
   - ESCAPE
   - symbol
   - SPACE
@@ -98,7 +98,7 @@ layers:
   - '}'
   - $
   - '&syntax_pattern'
-  - BSPC
+  - {t: ▽, type: trans}
   - LCTRL
   - '!'
   - '*'
