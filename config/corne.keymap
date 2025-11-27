@@ -16,18 +16,18 @@
 
 / {
     macros {
-        syntax_pattern: syntax_pattern {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL &kp EQUAL>;
-            label = "SYNTAX_PATTERN";
-        };
-
         change_lang: change_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE)>;
             label = "CHANGE_LANG";
+        };
+
+        go_let: go_let {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp EQUAL>;
+            label = "GO_LET";
         };
     };
 
@@ -79,7 +79,7 @@
 
             bindings = <
 &trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp UNDERSCORE     &trans
-&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &go_let
 &trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SQT            &trans
                                         &trans            &trans             &kp SPACE        &kp RET      &trans                &trans
             >;
