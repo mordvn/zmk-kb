@@ -7,11 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
-  chain-length = <27>;
-  // 21 backlight + 6 glowlight
+    chain-length = <27>;
+
+    // 21 backlight + 6 glowlight
 };
 
 / {
@@ -21,20 +21,6 @@
             #binding-cells = <0>;
             bindings = <&kp EXCL &kp EQUAL>;
             label = "SYNTAX_PATTERN";
-        };
-
-        ext_go_let: goletmacro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp EQUAL>;
-            label = "GOLETMACRO";
-        };
-
-        ext_md_code: markdown_codeblock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "MARKDOWN_CODEBLOCK";
         };
 
         change_lang: change_lang {
@@ -48,7 +34,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             display-name = "Default Layer";
 
             // -----------------------------------------------------------------------------------------
@@ -58,15 +44,15 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q        &kp W       &kp F           &kp P             &kp B        &kp J    &kp L              &kp U            &kp Y            &kp SEMICOLON  &kp BSPC
+&kp TAB    &kp Q        &kp W       &kp F           &kp P             &kp B        &kp J    &kp L              &kp U            &kp Y            &kp SEMICOLON  &trans
 &kp LCTRL  &mt LCTRL A  &mt LALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
-&kp LSHFT  &kp Z        &kp X       &kp C           &kp D             &kp V        &kp K    &kp H              &kp COMMA        &kp DOT          &kp FSLH       &kp ESC
-                                    &kp LGUI        &mo 2             &kp SPACE    &kp RET  &mo 1              &kp LEFT_ALT
+&kp LSHFT  &kp Z        &kp X       &kp C           &kp D             &kp V        &kp K    &kp H              &kp COMMA        &kp DOT          &kp FSLH       &trans
+                                    &kp ESCAPE      &mo 2             &kp SPACE    &kp RET  &mo 1              &kp BACKSPACE
             >;
         };
 
         lower_layer {
-            display-name = "Lower Layer";
+            display-name = "number";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -75,14 +61,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp SLASH  &kp NUMBER_9  &kp NUMBER_8  &kp N7        &kp ASTERISK    &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp BSPC
-&kp LCTRL  &kp MINUS  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp PLUS        &kp LEFT       &kp DOWN              &kp UP      &kp RIGHT          &change_lang     &bt BT_CLR
-&kp LSHFT  &kp X      &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp PERCENT     &trans         &trans                &trans      &trans             &bt BT_PRV       &bt BT_NXT
-                                    &kp LGUI      &kp N0        &kp SPACE       &kp RET        &trans                &kp RALT
+&kp TAB    &kp SLASH  &kp NUMBER_9  &kp NUMBER_8  &kp N7        &kp ASTERISK    &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&kp LCTRL  &kp MINUS  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp PLUS        &kp LEFT       &kp DOWN              &kp UP      &kp RIGHT          &mo 3            &bt BT_CLR
+&kp LSHFT  &kp X      &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp PERCENT     &change_lang   &trans                &trans      &trans             &bt BT_PRV       &bt BT_NXT
+                                    &trans        &kp N0        &kp SPACE       &kp RET        &trans                &trans
             >;
         };
 
-        raise_layer {
+        symbol {
             display-name = "Raise Layer";
 
             // -----------------------------------------------------------------------------------------
@@ -94,8 +80,17 @@
             bindings = <
 &kp TAB    &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &syntax_pattern    &kp BSPC
 &kp LCTRL  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
-&kp LSHFT  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SQT            &ext_md_code
-                                           &kp LGUI          &trans             &kp SPACE        &kp RET      &trans                &kp RALT
+&kp LSHFT  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SQT            &trans
+                                           &trans            &trans             &kp SPACE        &kp RET      &trans                &trans
+            >;
+        };
+
+        vimext {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
