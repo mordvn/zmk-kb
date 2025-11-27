@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-Default Layer">
-<text x="0" y="28" class="label" id="Default-Layer">Default Layer:</text>
+<g transform="translate(30, 0)" class="layer-default">
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -285,10 +285,8 @@ path.combo {
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Raise-Layer">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Raise</tspan><tspan x="0" dy="1.2em">Layer</tspan>
-</text>
+<a href="#symbol">
+<text x="0" y="0" class="key tap layer-activator">symbol</text>
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -410,8 +408,8 @@ path.combo {
 </g>
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#vimext">
-<text x="0" y="0" class="key tap layer-activator">vimext</text>
+<a href="#arr2vi">
+<text x="0" y="0" class="key tap layer-activator">arr2vi</text>
 </a></g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -496,8 +494,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 661)" class="layer-Raise Layer">
-<text x="0" y="28" class="label" id="Raise-Layer">Raise Layer:</text>
+<g transform="translate(30, 661)" class="layer-symbol">
+<text x="0" y="28" class="label" id="symbol">symbol:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -668,8 +666,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 992)" class="layer-vimext">
-<text x="0" y="28" class="label" id="vimext">vimext:</text>
+<g transform="translate(30, 992)" class="layer-arr2vi">
+<text x="0" y="28" class="label" id="arr2vi">arr2vi:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

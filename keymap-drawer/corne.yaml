@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  Default Layer:
+  default:
   - TAB
   - Q
   - W
@@ -38,7 +38,7 @@ layers:
   - /
   - {t: ▽, type: trans}
   - ESCAPE
-  - Raise Layer
+  - symbol
   - SPACE
   - RET
   - number
@@ -66,7 +66,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - vimext
+  - arr2vi
   - BT CLR
   - LSHFT
   - X
@@ -86,7 +86,7 @@ layers:
   - RET
   - {type: held}
   - {t: ▽, type: trans}
-  Raise Layer:
+  symbol:
   - TAB
   - '`'
   - <
@@ -129,7 +129,7 @@ layers:
   - RET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  vimext:
+  arr2vi:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
