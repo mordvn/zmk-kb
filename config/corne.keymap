@@ -34,8 +34,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
-            display-name = "default";
+        main {
+            display-name = "main";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -44,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q        &kp W       &kp F           &kp P             &kp B        &kp J    &kp L              &kp U            &kp Y            &kp SEMICOLON  &trans
-&trans   &mt LCTRL A  &mt LALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
-&trans   &kp Z        &kp X       &kp C           &kp D             &kp V        &kp K    &kp H              &kp COMMA        &kp DOT          &kp FSLH       &trans
-                                  &kp ESCAPE      &mo 2             &kp SPACE    &kp RET  &mo 1              &kp BACKSPACE
+&kp TAB         &kp Q        &kp W       &kp F           &kp P             &kp B        &kp J    &kp L              &kp U            &kp Y            &kp SEMICOLON  &kp BACKSPACE
+&kp LCTRL       &mt LCTRL A  &mt LALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
+&kp LEFT_SHIFT  &kp Z        &kp X       &kp C           &kp D             &kp V        &kp K    &kp H              &kp COMMA        &kp DOT          &kp FSLH       &kp ESCAPE
+                                         &kp RS(LGUI)    &mo 2             &kp SPACE    &kp RET  &mo 1              &kp LALT
             >;
         };
 
@@ -62,8 +62,8 @@
 
             bindings = <
 &trans  &kp SLASH  &kp NUMBER_9  &kp NUMBER_8  &kp N7        &kp ASTERISK    &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &kp MINUS  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp PLUS        &kp LEFT       &kp DOWN              &kp UP      &kp RIGHT          &mo 3            &bt BT_CLR
-&trans  &kp X      &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp PERCENT     &change_lang   &trans                &trans      &trans             &bt BT_PRV       &bt BT_NXT
+&trans  &kp MINUS  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp PLUS        &kp LEFT       &kp DOWN              &kp UP      &kp RIGHT          &change_lang     &bt BT_NXT
+&trans  &kp X      &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp PERCENT     &kp H          &kp J                 &kp K       &kp L              &bt BT_CLR       &bt BT_PRV
                                  &trans        &kp N0        &kp SPACE       &kp RET        &trans                &trans
             >;
         };
@@ -82,15 +82,6 @@
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &go_let
 &trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SQT            &trans
                                         &trans            &trans             &kp SPACE        &kp RET      &trans                &trans
-            >;
-        };
-
-        arr2vi {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
