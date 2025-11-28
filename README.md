@@ -3,7 +3,7 @@
 ZMK Config for my Corne v3 (Wireless)
 
 <div align="center">
-  <img src="media/logo.png" alt="kb pic" height="400">
+  <img src="media/logot.png" alt="kb pic" height="400">
 </div>
 
 ## Tool
