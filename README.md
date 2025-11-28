@@ -2,7 +2,9 @@
 
 ZMK Config for my Corne v3 (Wireless)
 
-<img src="media/kb.jpeg" alt="Keyboard" width="50%">
+<div align="center">
+  <img src="media/logo.png" alt="kb pic" height="400">
+</div>
 
 ## Tool
 
