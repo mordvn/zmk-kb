@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default:
+  main:
   - TAB
   - Q
   - W
@@ -12,8 +12,8 @@ layers:
   - U
   - Y
   - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - LCTRL
   - {t: A, h: LCTRL}
   - {t: R, h: LALT}
   - {t: S, h: LEFT GUI}
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RCTRL}
   - ''''
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
   - ESCAPE
+  - Sft+LGUI
   - symbol
   - SPACE
   - RET
   - number
-  - BACKSPACE
+  - LALT
   number:
   - {t: ▽, type: trans}
   - /
@@ -66,20 +66,20 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - arr2vi
-  - BT CLR
+  - '&change_lang'
+  - BT NXT
   - {t: ▽, type: trans}
   - X
   - '6'
   - '5'
   - '4'
   - '%'
-  - '&change_lang'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - H
+  - J
+  - K
+  - L
+  - BT CLR
   - BT PRV
-  - BT NXT
   - {t: ▽, type: trans}
   - '0'
   - SPACE
@@ -128,47 +128,4 @@ layers:
   - SPACE
   - RET
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  arr2vi:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - H
-  - J
-  - K
-  - L
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
