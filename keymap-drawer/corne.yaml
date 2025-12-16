@@ -13,19 +13,19 @@ layers:
   - O
   - P
   - BSPC
-  - LCTRL
-  - A
-  - S
-  - D
-  - F
+  - LSHIFT
+  - {t: A, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RGUI}
+  - {t: L, h: RALT}
+  - {t: ;, h: RCTRL}
   - ''''
-  - LSHFT
+  - LCTRL
   - Z
   - X
   - C
@@ -44,7 +44,50 @@ layers:
   - {t: Raise Layer, type: held}
   - RALT
   Lower Layer:
-  - TAB
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AC NEXT KEYBOARD LAYOUT SELECT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Raise Layer:
+  - <
   - '1'
   - '2'
   - '3'
@@ -55,39 +98,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - BT CLR
-  - BT NXT
-  - LSHFT
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F7
-  - F9
-  - F10
-  - BT PRV
-  - LGUI
-  - {type: held}
-  - SPACE
-  - RET
-  - {t: ▽, type: trans}
-  - RALT
-  Raise Layer:
-  - TAB
+  - '|'
+  - '>'
   - '!'
   - '@'
   - '#'
@@ -98,37 +110,25 @@ layers:
   - '*'
   - (
   - )
+  - \
   - {t: ▽, type: trans}
-  - LCTRL
+  - '`'
+  - '~'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOLUME UP
-  - BRIGHTNESS INC
-  - '-'
+  - _
   - '='
   - '['
   - ']'
-  - \
-  - '`'
-  - LSHFT
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - VOLUME DOWN
-  - BRIGHTNESS DEC
-  - _
-  - +
   - '{'
   - '}'
-  - '|'
-  - '~'
-  - LGUI
+  - '-'
+  - +
   - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - RALT
+  - {t: ▽, type: trans}
 combos:
 - p: [37, 40]
   k: Default Layer
