@@ -1,131 +1,134 @@
 layout: {zmk_keyboard: corne}
 layers:
-  main:
+  Default Layer:
   - TAB
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ;
-  - BACKSPACE
+  - U
+  - I
+  - O
+  - P
+  - BSPC
   - LCTRL
-  - {t: A, h: LCTRL}
-  - {t: R, h: LALT}
-  - {t: S, h: LEFT GUI}
-  - {t: T, h: LEFT SHIFT}
+  - A
+  - S
+  - D
+  - F
   - G
-  - M
-  - {t: N, h: RIGHT SHIFT}
-  - {t: E, h: RIGHT GUI}
-  - {t: I, h: RIGHT ALT}
-  - {t: O, h: RCTRL}
+  - H
+  - J
+  - K
+  - L
+  - ;
   - ''''
-  - LEFT SHIFT
+  - LSHFT
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
   - /
-  - ESCAPE
-  - Sft+LGUI
-  - symbol
+  - ESC
+  - LGUI
+  - {t: Lower Layer, type: held}
   - SPACE
   - RET
-  - number
-  - LALT
-  number:
-  - {t: ▽, type: trans}
-  - /
-  - '9'
-  - '8'
-  - '7'
-  - '*'
-  - BRI DEC
-  - BRIGHTNESS INC
-  - MUTE
-  - VOLUME DOWN
-  - VOLUME UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '3'
-  - '2'
+  - {t: Raise Layer, type: held}
+  - RALT
+  Lower Layer:
+  - TAB
   - '1'
-  - +
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - '&change_lang'
-  - BT NXT
-  - {t: ▽, type: trans}
-  - X
-  - '6'
-  - '5'
-  - '4'
-  - '%'
-  - H
-  - J
-  - K
-  - L
   - BT CLR
+  - BT NXT
+  - LSHFT
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F7
+  - F9
+  - F10
   - BT PRV
-  - {t: ▽, type: trans}
-  - '0'
+  - LGUI
+  - {type: held}
   - SPACE
   - RET
-  - {type: held}
   - {t: ▽, type: trans}
-  symbol:
-  - {t: ▽, type: trans}
-  - '`'
-  - <
-  - '>'
-  - '-'
-  - '|'
-  - ^
-  - '{'
-  - '}'
-  - $
-  - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RALT
+  Raise Layer:
+  - TAB
   - '!'
-  - '*'
-  - /
-  - '='
-  - '&'
+  - '@'
   - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
   - (
   - )
-  - ;
-  - '"'
-  - '&go_let'
   - {t: ▽, type: trans}
-  - '~'
-  - +
+  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOLUME UP
+  - BRIGHTNESS INC
+  - '-'
+  - '='
   - '['
   - ']'
-  - '%'
-  - '@'
-  - ':'
-  - ','
-  - .
-  - ''''
+  - \
+  - '`'
+  - LSHFT
+  - F11
+  - F12
   - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - BRIGHTNESS DEC
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - LGUI
   - {t: ▽, type: trans}
-  - {type: held}
   - SPACE
   - RET
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - RALT
+combos:
+- p: [37, 40]
+  k: Default Layer
